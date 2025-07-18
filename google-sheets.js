@@ -1,7 +1,11 @@
 const { google } = require('googleapis');
 const sheets = google.sheets('v4');
+
+// Lê o conteúdo da variável de ambiente
+const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
+
 const auth = new google.auth.GoogleAuth({
-  keyFile: 'credenciais.json',
+  credentials,
   scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly']
 });
 
