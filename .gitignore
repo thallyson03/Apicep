@@ -1,0 +1,17 @@
+# Node.js
+node_modules/
+
+# Credenciais
+credenciais.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Variáveis de ambiente
+.env
+.env.*
+
+# Arquivos de sistema (Mac, Windows)
+.DS_Store
+Thumbs.db
